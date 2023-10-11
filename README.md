@@ -14,7 +14,7 @@ This is the code to perform Coble creep deformation and void nucleation/growth s
 
 # How to run
 1. Generate grain distribution using Neper Tessellation Module
-   * We provided sample Neper tess file, `sample.tess`.
+   * We provided sample Neper tess file, `polycrystal.tess`.
 2. Set the parameters
-   * Edit the values in `parameter setting.txt` to set the parameter values.
-3. Save `sample.tess`, `parameter setting.txt` and `creep.py` in the same directory and execute `creep.py`. Strain and void area fraction data are exported in excel file.
+   * Edit the values in `parameters.dat` to set the parameter values.
+3. Save `polycrystal.tess`, `parameters.dat` and `creep.py` in the same directory and execute `creep.py`. Strain and void area fraction data are exported in excel file.
