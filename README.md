@@ -3,7 +3,7 @@ This code is designed to simulate Coble creep deformation and void nucleation/gr
 
 # Requirements
 * [**Neper**](https://neper.info/index.html): This is required to generate an arbitrary polycrystalline structure in a representative volume element (RVE).
-  * Official releases can be obtained from the "Releases" section of the [GitHub repository](https://github.com/neperfepx/neper).
+  * Official releases can be obtained from the [GitHub repository](https://github.com/neperfepx/neper).
   * A Unix-like system is necessary to run Neper. For Windows OS, you can use Windows Subsystem for Linux (WSL).
   * Detailed information about Neper is available [here](https://neper.info/index.html).
  
