@@ -16,5 +16,5 @@ This code is designed to simulate Coble creep deformation and void nucleation/gr
    * The **polycrystal.tess** file includes all the data describing the polycrystalline structure.
    * We have provided a sample file for your convenience.
 2. Modify the values in the **parameters.dat** file.
-   * The `parameters.dat` file includes all the required input parameters other than the data describing the polycrystalline structure, such as the target temperature, applied stress tensor, material constants, and numerical conditions.
+   * The **parameters.dat** file includes all the required input parameters other than the data describing the polycrystalline structure, such as the target temperature, applied stress tensor, material constants, and numerical conditions.
 3. Place **polycrystal.tess**, **parameters.dat**, and **creep.py** in the same directory, and execute **creep.py**. The strain and void area fraction data will be exported in the output file named **results.dat**. If you wish to extract other data evaluated in the simulation, you can do so by making slight modifications to **creep.py**.
