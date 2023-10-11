@@ -13,7 +13,7 @@ This code is designed to simulate Coble creep deformation and void nucleation/gr
 
 # How to Execute
 1. Generate the `polycrystal.tess` file using the Neper Tessellation Module.
-   * The "polycrystal.tess" file includes all the data describing the polycrystalline structure.
+   * The `polycrystal.tess` file includes all the data describing the polycrystalline structure.
    * We have provided a sample file for your convenience.
 2. Modify the values in the `parameters.dat` file.
    * The `parameters.dat` file includes all the required input parameters other than the data describing the polycrystalline structure, such as the target temperature, applied stress tensor, material constants, and numerical conditions.
