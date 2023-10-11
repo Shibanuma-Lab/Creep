@@ -1,20 +1,20 @@
 # Overview
-This is the code to perform Coble creep deformation and void nucleation/growth simulation in a 3D polycrystalline solid.
+This code is designed to simulate Coble creep deformation and void nucleation/growth in a 3D polycrystalline solid.
 
 # Requirements
-* [Neper](https://neper.info/index.html) to generate initial grain distribution
-  * Runs on Unix-like system (including Windows Subsystem for Linux)
-  * [Installation guide](https://neper.info/doc/introduction.html#installing-neper) is available
+* [Neper](https://neper.info/index.html): This is required to generate an arbitrary polycrystalline structure in a representative volume element (RVE).
+  * Official releases can be obtained from the "Releases" section of the [GitHub repository](https://github.com/neperfepx/neper)
+  * A Unix-like system is necessary to run Neper. For Windows OS, you can use Windows Subsystem for Linux (WSL).
+  * Detailed information about Neper is available [here](https://neper.info/index.html).
  
-* [Python 3.10](https://www.python.org/downloads/) to run the simulation
-  
-* Pandas, NumPy, Math, JSON, Random, SymPy, Scipy, and Workbook
-  * To install these libraries, use the following commands:  
+* [Python 3.10](https://www.python.org/downloads/): This is necessary for running the simulation.
+  * Additionally, the following libraries are required: Pandas, NumPy, Math, JSON, Random, SymPy, Scipy, and Workbook. You can install these libraries using the following commands:
     `pip install pandas numpy math jsonlib random sympy scipy Workbook`
 
-# How to run
-1. Generate grain distribution using Neper Tessellation Module
-   * We provided sample Neper tess file, `polycrystal.tess`.
-2. Set the parameters
-   * Edit the values in `parameters.dat` to set the parameter values.
-3. Save `polycrystal.tess`, `parameters.dat` and `creep.py` in the same directory and execute `creep.py`. Strain and void area fraction data are exported in excel file.
+# How to Execute
+1. Generate the `polycrystal.tess` file using the Neper Tessellation Module.
+   * The "polycrystal.tess" file includes all the data describing the polycrystalline structure.
+   * We have provided a sample file for your convenience.
+2. Modify the values in the `parameters.dat` file.
+   * The `parameters.dat` file includes all the required input parameters other than the data describing the polycrystalline structure, such as the target temperature, applied stress tensor, material constants, and numerical conditions.
+3. Place `polycrystal.tess`, `parameters.dat`, and `creep.py` in the same directory, and execute `creep.py`. The strain and void area fraction data will be exported in the output file named `results.dat`. If you wish to extract other data evaluated in the simulation, you can do so by making slight modifications to `creep.py`.
