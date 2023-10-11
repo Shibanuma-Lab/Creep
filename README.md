@@ -17,4 +17,4 @@ This is the code to perform Coble creep deformation and void nucleation/growth s
    * We provided sample Neper tess file (`sample.tess`).
 2. Set the parameters
    * Edit the values in the `parameter setting.txt` file to set the parameter values.
-3. Save `sample.tess`, `parameter setting.txt` and `creep.py` in the same directory and execute `creep.py`. Strain data and void area fraction are exported in excel file.
+3. Save `sample.tess`, `parameter setting.txt` and `creep.py` in the same directory and execute `creep.py`. Strain and void area fraction data are exported in excel file.
