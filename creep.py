@@ -1324,14 +1324,6 @@ for is_ in range(step):
     print(is_ + 1, "/", step)
     execution(is_)
 
-from openpyxl import Workbook
-wb = Workbook()
-sheet = wb.active
-
-for i, value in enumerate(ω_all):
-    sheet.cell(row=i+1, column=1, value=value)
-wb.save("area fraction.xlsx")
-
-for i, value in enumerate(ϵ[:,1,1]):
-    sheet.cell(row=i+1, column=1, value=value)
-wb.save("strain.xlsx")
+result = ['simulation result','time [h]'] + (Δt * np.arange(step + 1) / 60 ** 2).tolist() + ['strain (e_yy) [-]'] + ϵ[:,1,1].tolist() + ['void area fraction [-]'] + ω_all.tolist()
+with open("result.dat", "w") as o:
+    print(*result, sep="\n",file=o)
